@@ -15,7 +15,7 @@
 body{
   font-family: Montserrat, serif;
   font-size: 1em;
-  display: flex;
+  /* display: flex; */
   /* justify-content: center;
   align-items: center; */
   background: white;
@@ -23,20 +23,47 @@ body{
 
 }
 
+#headline-container{
 
-.title{
-  align-items: center;
+  margin: 20px;
+  padding: 40px;
+  /* width: 1000px; */
+
+}
+
+h1 {
+ overflow: hidden;
+ text-align: center;
+}
+h1:before,
+h1:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+h1:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+h1:after {
+ left: 0.5em;
+ margin-right: -50%;
 }
 
 .card-area
 {
 
   position: relative;
-  width: 1000px;
+  /* width: 1000px; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 20px;
+  align-items: center ;
 
 }
 
